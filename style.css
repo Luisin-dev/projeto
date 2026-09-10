@@ -6,7 +6,7 @@
 
 :root {
   --text-color: #fff;
-  --bg-url: url("assets/background\ aiai\ se\ sabe.png");
+  --bg-url: url("assets/background\ aiai\ se\ sabe\ mobile.png");
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url("assets/background\ chave2.png");
+  --bg-url: url("assets/background\ chave\ light\ mobile.png");
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body * {
@@ -180,4 +180,15 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 16px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url("./assets/bg-desktop.jpg");
+  }
+
+  .light {
+    --bg-url: url("./assets/bg-desktop-light.jpg");
+  }
 }
